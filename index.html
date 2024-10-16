@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Hub</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tfoot {
+            font-weight: bold;
+        }
+        tfoot tr:nth-child(1) td {
+            background-color: #e9e9e9;
+        }
+        tfoot tr:nth-child(2) td {
+            background-color: #cccccc;
+        }
+        p {
+            margin: 16px 0;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px
+        }
+        h2 {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+        p, table {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        footer {
+            text-align: center;
+            margin-top: 16px;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer p {
+            margin: 0;
+        }
+        @media screen and (max-width: 600px) {
+            table {
+                width: 100%;
+            }
+            th, td {
+                display: block;
+            }
+            th {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+                width: 100%;
+                background-color: #f2f2f2;
+            }
+            td {
+                border: none;
+                position: relative;
+                padding-left: 50%;
+            }
+            td::before {
+                position: absolute;
+                top: 6px;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                content: attr(data-label);
+                text-transform: uppercase;
+            }
+            td:after {
+                position: absolute;
+                top: 6px;
+                right: 6px;
+                width: 45%;
+                padding-left:5px;
+            }
+            td:nth-child(even):after {
+                content: "";
+            }
+            td:nth-child(odd):before {
+                content: "";
+            }
+            td:nth-child(even):before {
+                content: "";
+            }
+            td:nth-child(odd):after {
+                content: "";
+            }
+                
+        }
+    </style>
+</head>
+<body>
+    <h1>Test is done by successfully</h1>
+    <p>Your code passed all the tests.</p>
+    <h2>Test Results</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Test Case</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Test Case 1</td>
+                <td>Passed</td>
+            </tr>
+            <tr>
+                <td>Test Case 2</td>
+                <td>Passed</td>
+            </tr>
+            <tr>
+                <td>Test Case 3</td>
+                <td>Failed</td>
+            </tr>
+            <tr>
+                <td>Test Case 4</td>
+                <td>Passed</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Passed: 3</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Total Test Cases: 4</p>
+    <p>Percentage of Passed Tests: 75%</p>
+    <p>Overall Status: Passed</p>
+    <p>Time taken: 10 seconds</p>
+    <p>Memory Usage: 256 KB</p>
+    <p>Test Environment: Node.js v14.17.1</p>
+    <p>Browser: Chrome 91.0.4472.114</p>
+    <p>Operating System: macOS Big Sur 11.3.1</p>
+    <p>Additional Information: Tester Name: John Doe</p>
+    <p>Test Date: 2021-09-15 15:30:00</p>
+    <p>Test Duration: 30 minutes</p>
+    <p>Test Result File: test_results.json</p>
+    <p>Test Report File: test_report.pdf</p>
+    <p>Test Coverage Report File: test_coverage.html</p>
+    <p>Test Detailed Report File: test_detailed_report.html</p>
+    <p>Test Performance Report File: test_performance_report.html</p>
+    <p>Test Security Report File: test_security_report.html</p>
+    <p>Test Documentation Report File: test_documentation_report.html</p>
+    <p>Test Automation Report File: test_automation_report.html</p>
+
+    
+    
+</body>
+</html>
